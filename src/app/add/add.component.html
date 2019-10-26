@@ -1,0 +1,55 @@
+<div class="conintainer">
+  <div class="row">
+    <div class="col col-12 col-am-4"></div>
+    <div class="col col-12 col-am-4">
+      <form (ngSubmit)="Addproduct()">
+        <table class="table">
+          <tr> 
+            <td> Product ID</td>
+            <td> <input type="text" class="form-control" name="p_id" [(ngModel)]="productItem.productId"></td>
+            
+          </tr>
+          <tr> 
+              <td> Product Code</td>
+              <td> <input type="text" class="form-control" name="p_code" [(ngModel)]="productItem.productCode"></td>
+              
+            </tr>
+            <tr> 
+                <td> Product Name</td>
+                <td> <input type="text" class="form-control" name="p_name" [(ngModel)]="productItem.productName"></td>
+                
+              </tr>
+            <tr> 
+                <td> Description</td>
+                <td> <input type="text" class="form-control" name="p_desc" [(ngModel)]="productItem.description"></td>
+                
+              </tr>
+              <tr> 
+                  <td> Product Date</td>
+                  <td> <input type="text" class="form-control" name="p_date" [(ngModel)]="productItem.releaseDate"></td>
+                  
+                </tr>
+              <tr> 
+                  <td> Product Price</td>
+                  <td> <input type="text" class="form-control" name="p_price" [(ngModel)]="productItem.price"></td>
+                  
+                </tr>
+                <tr> 
+                    <td> Product Rating</td>
+                    <td> <input type="text" class="form-control" name="p_rating" [(ngModel)]="productItem.starRating"></td>
+                    
+                  </tr>
+                  <tr> 
+                      <td> Image URL</td>
+                      <td> <input type="text" class="form-control" name="p_url" [(ngModel)]="productItem.imageUrl"></td>
+                      
+                    </tr>
+                  <tr>
+                    <td> <button type="submit" type="btn-btn primary">SUBMIT</button></td>
+                    <td> <button type="reset" type="btn-btn primary">RESET</button></td>
+                  </tr>
+        </table>
+      </form>
+    </div>
+  </div>
+</div>
